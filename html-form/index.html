@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jamaler Maa er Pitha Ghor</title>
-    <style></style>
+    <style>
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+    </style>
   </head>
   <body>
     <header></header>
@@ -20,6 +25,19 @@
             >Your Email:
             <input type="email" name="" id="email" />
           </label>
+          <label for="phone">
+            Your Phone Number:
+            <input type="text" name="" id="phone" />
+          </label>
+
+          <fieldset>
+            <legend>Pick one pitha!</legend>
+            <label for="chitoy"> <input type="radio" name="pitha" id="chitoy" /> Chitoy </label>
+            <label for="vapa-phitha"
+              ><input type="radio" name="pitha" id="vapa-phitha" /> Vapa Pitha</label
+            >
+            <label for="puri"><input type="radio" name="pitha" id="puri" /> Puri</label>
+          </fieldset>
         </form>
       </section>
     </main>
