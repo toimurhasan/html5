@@ -4,16 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Table</title>
+    <link rel="stylesheet" href="nav.css" />
     <style>
-      * {
-        margin: auto;
-      }
       h1 {
         text-align: center;
         margin: 15px 0px;
       }
       table {
         border-collapse: collapse;
+        margin: 0 auto;
       }
       td,
       th {
@@ -30,48 +29,63 @@
     </style>
   </head>
   <body>
-    <h1>HTML Table</h1>
-    <table>
-      <thead>
-        <tr>
-          <th>No.</th>
-          <th>Full Name</th>
-          <th>Position</th>
-          <th>Salary</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>Bill Gates</td>
-          <td>Founder Microsoft</td>
-          <td>$1000</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Steve Jobs</td>
-          <td>Founder Apple</td>
-          <td>$1200</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Larry Page</td>
-          <td>Founder Google</td>
-          <td>$1100</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>Mark Zukerbarg</td>
-          <td>Founder Facebook</td>
-          <td>$1300</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td colspan="2">Total Employee: 4</td>
-          <td colspan="2">Total Salary: $4400</td>
-        </tr>
-      </tfoot>
-    </table>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="../html-form/index.html">Form</a></li>
+          <li><a href="../html-table/index.html">Table</a></li>
+          <li><a href="../audio-video/index.html">Video</a></li>
+          <li><a href="../semantic-tag/index.html">Semantic</a></li>
+        </ul>
+        <hr />
+      </nav>
+    </header>
+    <main>
+      <h1>HTML Table</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Full Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Bill Gates</td>
+            <td>Founder Microsoft</td>
+            <td>$1000</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Steve Jobs</td>
+            <td>Founder Apple</td>
+            <td>$1200</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Larry Page</td>
+            <td>Founder Google</td>
+            <td>$1100</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Mark Zukerbarg</td>
+            <td>Founder Facebook</td>
+            <td>$1300</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Total Employee: 4</td>
+            <td colspan="2">Total Salary: $4400</td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+    <footer></footer>
   </body>
 </html>
