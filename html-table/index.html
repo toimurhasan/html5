@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Table</title>
     <style>
+      * {
+        margin: auto;
+      }
+      h1 {
+        text-align: center;
+        margin: 15px 0px;
+      }
       table {
         border-collapse: collapse;
       }
@@ -12,6 +19,13 @@
       th {
         border: 1px solid black;
         padding: 5px 10px;
+      }
+      tfoot tr td:nth-child(1) {
+        text-align: start;
+        background-color: aquamarine;
+      }
+      tfoot tr td:nth-child(2) {
+        text-align: end;
       }
     </style>
   </head>
@@ -52,7 +66,12 @@
           <td>$1300</td>
         </tr>
       </tbody>
-      <tfoot></tfoot>
+      <tfoot>
+        <tr>
+          <td colspan="2">Total Employee: 4</td>
+          <td colspan="2">Total Salary: $4400</td>
+        </tr>
+      </tfoot>
     </table>
   </body>
 </html>
