@@ -19,3 +19,9 @@ nav > ul > li:hover a {
   font-weight: 200;
   text-decoration: line-through;
 }
+.hover {
+  display: none;
+}
+.mouse:hover .hover {
+  display: block;
+}
