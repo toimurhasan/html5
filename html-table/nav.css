@@ -2,26 +2,28 @@ nav > ul {
   display: flex;
   justify-content: center;
 }
-nav > ul > li {
+nav ul li {
   list-style: none;
   padding: 20px;
   font-weight: 600;
 }
-nav > ul > li:hover {
+nav ul li:hover {
   background-color: rgb(204, 204, 204);
   cursor: pointer;
-  border-radius: 3px;
 }
-nav > ul > li > a {
+nav ul li a {
   text-decoration: none;
 }
 nav > ul > li:hover a {
   font-weight: 200;
-  text-decoration: line-through;
+  text-decoration: underline;
 }
 .hover {
   display: none;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  padding: 0;
 }
-.mouse:hover .hover {
+nav li:hover > .hover {
   display: block;
 }
